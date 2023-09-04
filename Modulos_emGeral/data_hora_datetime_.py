@@ -11,11 +11,19 @@
 # Instalando o pytz
 # pip install pytz types-pytz
 from datetime import datetime
+from pytz import timezone
 
-data_str_data = '2023-09-04 16:33:45'
-data_str_fmt = '%Y-%m-%d %H:%M:%S'
 
-data = datetime.strptime(data_str_data, data_str_fmt)
+
+data = datetime.now()
 print(data)
+
+
+# data_str_data = '2023-09-04 16:33:45'
+# data_str_fmt = '%Y-%m-%d %H:%M:%S'
+
+# data = datetime.strptime(data_str_data, data_str_fmt)
+# print(data)
 # data = datetime(2023, 9, 4, 16, 30, 1)
 # print(data)
+
