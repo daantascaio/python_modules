@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\caio.dantas\Desktop\python_modules\Modulos_emGeral\venv"
+VIRTUAL_ENV="C:\Users\Caio\Desktop\python_modules\Modulos_emGeral\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
