@@ -18,7 +18,7 @@
 # operação de entrada/saída (I/O) com arquivos em si.
 import os
 
-CAMINHO = os.path.join('Desktop', 'python_module', 'python.py')
+CAMINHO = os.path.join(r'Desktop', r'python_module', r'python.py')
 print(CAMINHO)
 print()
 
@@ -31,9 +31,9 @@ print(repository, file)
 name_file, ext_file = os.path.splitext(file)
 print(name_file, ext_file)
 
-print(os.path.exists('C:\\Users\\caio.dantas'))
-print(os.path.abspath('.'))
-print(os.path.abspath('locale_traducoes.py'))
+print(os.path.exists(r'C:\\Users\\caio.dantas'))
+print(os.path.abspath(r'.'))
+print(os.path.abspath(r'locale_traducoes.py'))
 print()
 print(os.path.basename(CAMINHO))
 print(os.path.basename(repository))
