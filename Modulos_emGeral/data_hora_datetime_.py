@@ -11,13 +11,23 @@
 # Instalando o pytz
 # pip install pytz types-pytz
 from datetime import datetime
-from pytz import timezone
 
+# from pytz import timezone
 
 
 data = datetime.now()
-print(data)
+print(data.timestamp())
 
+data_2 = datetime.now()
+data_timestamp = data_2.timestamp()
+print(datetime.fromtimestamp(data_timestamp))       # HORA ATUAL SEMPRE! 
+
+# data = datetime.now(timezone('Asia/Tokyo'))
+# print(data)
+# print()
+
+# data_2 = datetime(2023, 9, 4, 16, 30, 1, tzinfo=timezone('Asia/Tokyo'))
+# print(data_2)
 
 # data_str_data = '2023-09-04 16:33:45'
 # data_str_fmt = '%Y-%m-%d %H:%M:%S'
