@@ -18,7 +18,7 @@
 # operação de entrada/saída (I/O) com arquivos em si.
 import os
 
-"""CAMINHO = os.path.join(r'Desktop', r'python_module', r'python.py')
+CAMINHO = os.path.join(r'Desktop', r'python_module', r'python.py')
 print(CAMINHO)
 print()
 
@@ -27,7 +27,7 @@ print()
 
 repository, file = os.path.split(CAMINHO)
 print(repository, file)
-                                                        need refactoryng, error detected
+                                                        # need refactoryng, error detected
 name_file, ext_file = os.path.splitext(file)
 print(name_file, ext_file)
 
@@ -36,5 +36,5 @@ print(os.path.abspath(r'.'))
 print(os.path.abspath(r'locale_traducoes.py'))
 print()
 print(os.path.basename(CAMINHO))
-print(os.path.basename(repository))"""
+print(os.path.basename(repository))
 
