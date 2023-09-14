@@ -8,8 +8,9 @@
 # True          true
 # False         false
 # None          null
+
 import json
-from pprint import pprint
+# from pprint import pprint
 from typing import TypedDict
 
 class Movie(TypedDict):
@@ -42,3 +43,6 @@ filme: Movie = json.loads(string_json)
 # print(filme['title'])
 # print(filme['characters'][0])
 # print(filme['year'] + 10)
+
+json_string = json.dumps(filme, ensure_ascii=False, indent=2)
+print(json_string)
