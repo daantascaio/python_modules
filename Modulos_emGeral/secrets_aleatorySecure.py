@@ -1,4 +1,3 @@
-
 # secrets gera números aleatórios seguros
 import secrets
 
