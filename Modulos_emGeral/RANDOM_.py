@@ -8,7 +8,7 @@
 import random
 
 # Funções:
-# seed
+# seed nm
 #   -> Inicializa o gerador de random (por isso "números pseudoaleatórios")
 # random.seed(0)
 
