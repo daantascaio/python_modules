@@ -12,3 +12,5 @@
 # load_dotenv()
 # https://pypi.org/project/python-dotenv/
 # OBS.: sempre lembre-se de criar um .env-example
+from dotenv import load_dotenv # type: ignore
+
