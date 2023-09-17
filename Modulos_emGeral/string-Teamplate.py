@@ -3,8 +3,7 @@
 # Métodos:
 # substitute: substitui mas gera erros se faltar chaves
 # safe_substitute: substitui sem gerar erros
-# Você também pode trocar o delimitador e outras coisas criando uma subclasse
-# de template.
+# Você também pode trocar o delimitador e outras coisas criando uma subclasse de template.
 import locale
 import string
 from datetime import datetime
