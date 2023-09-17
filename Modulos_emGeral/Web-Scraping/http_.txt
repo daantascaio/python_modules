@@ -17,3 +17,6 @@
 # https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 # - Os cabeçalhos HTTP (Content-Type, Accept)
 # - O corpo da mensagem (Pode estar em vazio em alguns casos)
+
+Este é um código para criar um servidor http usando python, sim, o python tem isso pronto já
+python -m http.server -d C:\Users\caiod\Desktop\python_modules\Modulos_emGeral\Web-Scraping\site 3333
