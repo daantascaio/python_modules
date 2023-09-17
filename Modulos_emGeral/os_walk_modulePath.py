@@ -12,16 +12,15 @@ counter_ = count()
 
 for root, dirs, files in os.walk(path_):
     if len(files) > 20:
-        break 
+        break
     counter__ = next(counter_)
     print(counter__)
     print(f'ROOT: {root}')
 
     for dir_ in dirs:
         print(f'{counter__} | DIR: {dirs}')
-    
+
         for files_ in files:
             print(f'{counter__} | FILES: {files}')
             # da pra fazer várias coisas, renomear, mudar, deletar e etc
-            # os.unlink(files) isso é um delete, não execute 
-
+            # os.unlink(files) isso é um delete, não execute

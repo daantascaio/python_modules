@@ -18,14 +18,15 @@ data_final = data_emprestimo + relativedelta(months=60)
 
 count = 0
 print(60)
-for i in range(60):             #MINHA SOLUÇÃO
+for i in range(60):             # MINHA SOLUÇÃO
     count += 1
 
     data_emprestimo += relativedelta(months=1)
     data_emprestimo_formatada = data_emprestimo.strftime('%d/%m/%Y')
     print(f'{data_emprestimo_formatada}, {parcelas_mensais}')
 print()
-print(f'Você pegou R$1,000,000.00 para pagar em 5 anos ({count} meses) em parcelas de {parcelas_mensais}')
+print(
+    f'Você pegou R$1,000,000.00 para pagar em 5 anos ({count} meses) em parcelas de {parcelas_mensais}')
 
 #########################################################################################################################################################################################
 
@@ -54,5 +55,3 @@ print(
     f'({numero_parcelas} meses) em parcelas de '
     f'R$ {valor_parcela:,.2f}.'
 )
-
-
