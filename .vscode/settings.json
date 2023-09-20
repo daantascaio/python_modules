@@ -12,7 +12,7 @@
   "workbench.colorTheme": "Theme Flat",
   "workbench.iconTheme": "material-icon-theme",
   "code-runner.executorMap": {
-    "python": "clear ; python -u"
+    "python": "clear ; C:\\Users\\caio.dantas\\Desktop\\python_modules\\Modulos_emGeral\\venv\\Scripts\\python.exe -u"
   },
   "code-runner.runInTerminal": true,
   "code-runner.ignoreSelection": true,
