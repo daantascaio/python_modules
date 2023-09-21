@@ -1,3 +1,4 @@
+# type: ignore
 """from pathlib import Path
 
 from selenium import webdriver
@@ -16,7 +17,7 @@ chrome_browser = webdriver.Chrome(
 chrome_browser.get('https://www.google.com.br/')"""
 # Selenium - Automatizando tarefas no navegador
 from pathlib import Path
-from time import sleep
+# from time import sleep
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -37,7 +38,7 @@ def make_chrome_browser(*options: str) -> webdriver.Chrome:
     # chrome_options.add_argument('--headless')
     if options is not None:
         for option in options:
-            chrome_options.add_argument(option)  # type: ignore
+            chrome_options.add_argument(option)
 
     chrome_service = Service(
         executable_path=str(CHROME_DRIVER_PATH),
