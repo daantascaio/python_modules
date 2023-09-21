@@ -22,4 +22,4 @@ for week in calendar.monthcalendar(2022, 12):
             continue
         print(day)
 
-print(calendar.month(2003, 7)) # eu nasci na segunda feira!
+print(calendar.month(2003, 7))  # eu nasci na segunda feira!

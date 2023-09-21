@@ -42,6 +42,7 @@ def formata_tamanho(tamanho_em_bytes: int, base: int = 1024) -> str:
 # print(formata_tamanho(1000000000))
 # print(formata_tamanho(10000000000))
 
+
 path_ = os.path.join('\\Users', 'caiod', 'Desktop', 'python_modules')
 
 counter_ = count()

@@ -20,7 +20,7 @@ print(data.timestamp())
 
 data_2 = datetime.now()
 data_timestamp = data_2.timestamp()
-print(datetime.fromtimestamp(data_timestamp))       # HORA ATUAL SEMPRE! 
+print(datetime.fromtimestamp(data_timestamp))       # HORA ATUAL SEMPRE!
 
 # data = datetime.now(timezone('Asia/Tokyo'))
 # print(data)
@@ -36,4 +36,3 @@ print(datetime.fromtimestamp(data_timestamp))       # HORA ATUAL SEMPRE!
 # print(data)
 # data = datetime(2023, 9, 4, 16, 30, 1)
 # print(data)
-

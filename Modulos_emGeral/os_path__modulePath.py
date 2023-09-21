@@ -27,7 +27,7 @@ print()
 
 repository, file = os.path.split(CAMINHO)
 print(repository, file)
-                                                        # need refactoryng, error detected
+# need refactoryng, error detected
 name_file, ext_file = os.path.splitext(file)
 print(name_file, ext_file)
 
@@ -37,4 +37,3 @@ print(os.path.abspath(r'locale_traducoes.py'))
 print()
 print(os.path.basename(CAMINHO))
 print(os.path.basename(repository))
-

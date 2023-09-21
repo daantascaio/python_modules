@@ -12,15 +12,18 @@ import json
 from pprint import pprint
 from typing import TypedDict
 
+
 class Movie(TypedDict):
-      title: str
-      original_title: str
-      is_movie: bool
-      imdb_rating: float
-      year: int
-      characters: list[str]
-      budget: None | float
-# Str normal em python, usando ''' ''' porq caiu como uma luva para exemplificar 
+    title: str
+    original_title: str
+    is_movie: bool
+    imdb_rating: float
+    year: int
+    characters: list[str]
+    budget: None | float
+
+
+# Str normal em python, usando ''' ''' porq caiu como uma luva para exemplificar
 # o object json
 string_json = '''
 {
@@ -42,4 +45,3 @@ filme: Movie = json.loads(string_json)
 # print(filme['title'])
 # print(filme['characters'][0])
 # print(filme['year'] + 10)
-
