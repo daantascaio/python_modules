@@ -8,7 +8,7 @@
 # Ative seu ambiente virtual
 # pip install pypdf2
 from pathlib import Path
-from PyPDF2 import PdfReader
+from PyPDF2 import PdfReader, PdfWriter, PdfMerger
 
 FILE_RAIZ = Path(__file__).parent
 FILE_ORIGIN_PDF = FILE_RAIZ / 'pdfs_origin'
@@ -33,3 +33,22 @@ imagem0 = page0.images[0]
 
 with open(NEW_DIR / imagem0.name, 'wb') as fp:
     fp.write(imagem0.data)
+
+for i, page in enumerate(reader.pages):
+    writer = PdfWriter()
+    with open(NEW_DIR / f'page{i}.pdf', 'wb') as arquivo:
+        writer.add_page(page)
+        writer.write(arquivo)  # type: ignore
+
+files = [
+    NEW_DIR / 'page1.pdf',
+    NEW_DIR / 'page0.pdf',
+
+]
+
+merger = PdfMerger()
+for file in files:
+    merger.append(file)  # type: ignore
+
+merger.write(NEW_DIR / 'MERGED.pdf')  # type: ignore
+merger.close()
