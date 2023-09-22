@@ -1,9 +1,9 @@
-from collections.abc import Callable, Iterable, Mapping
+# (Parte 2) Threads - Executando processamentos em paralelo
+
 from threading import Thread
 from time import sleep
-from typing import Any
 
-
+"""
 class MeuThread(Thread):
     def __init__(self, texto, tempo):
         self.texto = texto
@@ -18,12 +18,33 @@ class MeuThread(Thread):
 
 t1 = MeuThread('Thread 1', 5)
 t1.start()
-t1 = MeuThread('Thread 2', 3)
-t1.start()
-t1 = MeuThread('Thread 3', 4)
-t1.start()
-t1 = MeuThread('Thread 4', 7)
-t1.start()
+
+t2 = MeuThread('Thread 2', 3)
+t2.start()
+
+t3 = MeuThread('Thread 3', 2)
+t3.start()
+
 for i in range(20):
     print(i)
     sleep(1)
+"""
+
+
+def vai_demorar(texto: str, tempo: int):
+    sleep(tempo)
+    print(texto)
+
+
+t1 = Thread(target=vai_demorar, args=('Olá mundo 1!', 5))
+t1.start()
+
+t2 = Thread(target=vai_demorar, args=('Olá mundo 2!', 1))
+t2.start()
+
+t3 = Thread(target=vai_demorar, args=('Olá mundo 3!', 2))
+t3.start()
+
+for i in range(20):
+    print(i)
+    sleep(.5)
